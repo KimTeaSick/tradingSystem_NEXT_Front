@@ -1,0 +1,53 @@
+.sidebar_inner {
+  width: 15%;
+  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.profile_section {
+  gap: 10px;
+  display: flex;
+  height: 100px;
+}
+.profile_face {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #7f8182;
+}
+.profile_name {
+  font-size: 14px;
+  color: #7f8182;
+}
+.profile_account {
+  color: white;
+}
+.profile_blance {
+  color: white;
+}
+
+.button {
+  height: 35px;
+  padding: 5px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  box-sizing: border-box;
+}
+@keyframes hover_button {
+  to {
+    background-color: #c6c6c6;
+  }
+}
+.button:hover {
+  border-radius: 10px;
+  animation-duration: 0.5s;
+  animation-name: hover_button;
+  animation-fill-mode: forwards;
+}
+.button_text {
+  color: #7f8182;
+}

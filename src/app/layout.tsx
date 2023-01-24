@@ -1,18 +1,23 @@
-import './globals.css'
+import SideBar from "@/components/SideBar";
+import { FC, ReactNode } from "react";
+import "./layout.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
-    </html>
-  )
+interface RootLayoutProps {
+  children: ReactNode;
 }
+
+const RootLayout: FC<RootLayoutProps> = ({ children }) => {
+  return (
+    <html>
+      <head>
+        <title>nctrading</title>
+      </head>
+      <body>
+        <SideBar />
+        {children}
+      </body>
+    </html>
+  );
+};
+
+export default RootLayout;

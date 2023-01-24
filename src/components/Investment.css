@@ -1,0 +1,19 @@
+.inv_list {
+  gap: 1%;
+  row-gap: 10px;
+  display: flex;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+.inv_button {
+  width: 13%;
+  height: 150px;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #202222;
+  box-shadow: 1px 1px 2px #2c2d2d;
+}
