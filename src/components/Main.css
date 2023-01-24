@@ -1,13 +1,37 @@
 .koko {
   width: 100%;
-  height: 250px;
+  height: 300px;
   padding: 15px;
   margin-top: 5%;
   border-radius: 25px;
+  box-sizing: border-box;
   background-color: #202222;
 }
 .koko_title {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
+}
+.wrapper_section {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: fit-content;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.value_section {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+.chart_section {
+  display: flex;
+  justify-content: center;
+  color: "#fff";
+  align-items: center;
+  width: 30%;
+
+  /* height: 100%; */
 }
